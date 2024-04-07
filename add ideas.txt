@@ -1,0 +1,8 @@
+ Hamster (Mob)
+ Elemental Dragons (Mob)
+ Cat Launcher (Item)
+ FatMan Launcher (Item)
+ Musket (Item)
+ Ice Sword (Item)
+ Cheese Banner (Item)
+ Exp Block (Block) = {EXP bottles to Exp block, Gets exp over time}
