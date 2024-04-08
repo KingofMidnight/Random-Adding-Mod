@@ -1,7 +1,11 @@
-package net.kmidnight.randomaddmod;
+package net.kmidnight.randomaddingmod;
 
 import com.mojang.logging.LogUtils;
+import net.kmidnight.randomaddingmod.block.ModBlocks;
+import net.kmidnight.randomaddingmod.item.ModCreativeModeTabs;
+import net.kmidnight.randomaddingmod.item.ModItems;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -16,15 +20,17 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(RandomAddingMod.MOD_ID)
 public class RandomAddingMod {
-    // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "randomaddingmod";
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public RandomAddingMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -40,19 +46,20 @@ public class RandomAddingMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
     }
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES)
+            event.accept(ModItems.ICESWORD);
+            event.accept(ModBlocks.EXP_BLOCK);
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-        // Do something when the server starts
-        LOGGER.info("HELLO from server starting");
+        LOGGER.info("HELLO from Random adding mod, i see the Server is Starting");
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent

@@ -5,4 +5,5 @@
  Musket (Item)
  Ice Sword (Item)
  Cheese Banner (Item)
+ Self-Destruct Button (Item)
  Exp Block (Block) = {EXP bottles to Exp block, Gets exp over time}
