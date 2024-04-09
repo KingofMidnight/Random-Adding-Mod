@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "randomaddingmod:block/exp_block"
+    }
+  }
+}

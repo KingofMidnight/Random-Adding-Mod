@@ -1,9 +1,12 @@
- Hamster (Mob)
+ Hamster (Mob) = [Model & Texture = Done] Half Done
  Elemental Dragons (Mob)
- Cat Launcher (Item)
+ IRL Spider (Mob)
+
+ Cat Launcher (Item) = [Model & Texture = Done] Half Done (Check changes have happened)
  FatMan Launcher (Item)
  Musket (Item)
- Ice Sword (Item)
- Cheese Banner (Item)
+ Ice Sword (Item) = Done
+ Cheese Banner Logo (Item)
  Self-Destruct Button (Item)
- Exp Block (Block) = {EXP bottles to Exp block, Gets exp over time}
+
+ Exp Block (Block) = {EXP bottles to Exp block, Gets exp over time} = Half Done

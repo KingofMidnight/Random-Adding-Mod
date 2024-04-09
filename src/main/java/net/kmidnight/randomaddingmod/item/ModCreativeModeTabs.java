@@ -17,6 +17,7 @@ public class ModCreativeModeTabs {
         .title(Component.translatable("creativetab.randomaddingmod_tab"))
         .displayItems((parameters, output) -> {
             output.accept(ModItems.ICESWORD.get());
+            output.accept(ModItems.CATLAUNCHER.get());
             output.accept(ModBlocks.EXP_BLOCK.get());
         }).build());
 

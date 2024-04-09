@@ -1,5 +1,8 @@
 {
   "item.randomaddingmod.ice_sword": "Ice Sword",
+  "item.randomaddingmod.cat_launcher": "Cat Launcher",
+
   "block.randomaddingmod.exp_block": "EXP Block",
+
   "creativetab.randomaddingmod_tab": "Random Adding Mod"
 }
