@@ -2,7 +2,7 @@
  Elemental Dragons (Mob)
  IRL Spider (Mob)
 
- Cat Launcher (Item) = [Model & Texture = Done] Half Done (Check changes have happened)
+ Cat Launcher (Item) = [Model & Texture = Done] Half Done (move model)
  FatMan Launcher (Item)
  Musket (Item)
  Ice Sword (Item) = Done

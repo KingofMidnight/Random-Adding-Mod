@@ -6,6 +6,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -18,6 +19,9 @@ public class ModCreativeModeTabs {
         .displayItems((parameters, output) -> {
             output.accept(ModItems.ICESWORD.get());
             output.accept(ModItems.CATLAUNCHER.get());
+            output.accept(ModItems.MUSKET.get());
+            output.accept(ModItems.CHEESEBANNERLOGO.get());
+            output.accept(ModItems.SELFDESTRUCTBUTTON.get());
             output.accept(ModBlocks.EXP_BLOCK.get());
         }).build());
 

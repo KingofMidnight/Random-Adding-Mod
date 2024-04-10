@@ -2,9 +2,13 @@ package net.kmidnight.randomaddingmod;
 
 import com.mojang.logging.LogUtils;
 import net.kmidnight.randomaddingmod.block.ModBlocks;
+import net.kmidnight.randomaddingmod.entity.ModEntities;
+import net.kmidnight.randomaddingmod.entity.client.HamsterRenderer;
 import net.kmidnight.randomaddingmod.item.ModCreativeModeTabs;
 import net.kmidnight.randomaddingmod.item.ModItems;
 import net.minecraft.client.Minecraft;
+
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -30,7 +34,9 @@ public class RandomAddingMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntities.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -54,6 +60,9 @@ public class RandomAddingMod {
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.ICESWORD);
             event.accept(ModItems.CATLAUNCHER);
+            event.accept(ModItems.MUSKET);
+            event.accept(ModItems.CHEESEBANNERLOGO);
+            event.accept(ModItems.SELFDESTRUCTBUTTON);
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.EXP_BLOCK);
@@ -74,6 +83,7 @@ public class RandomAddingMod {
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+            EntityRenderers.register(ModEntities.HAMSTER.get(), HamsterRenderer::new);
         }
     }
 }
