@@ -15,7 +15,7 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<HamsterEntity>> HAMSTER =
         ENTITY_TYPE.register("hamster", () -> EntityType.Builder.of(HamsterEntity::new, MobCategory.CREATURE)
-                .sized(1.5f, 1.5f).build("hamster"));
+                .sized(0.5f, 0.5f).build("hamster"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPE.register(eventBus);

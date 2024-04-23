@@ -80,10 +80,11 @@ public class RandomAddingMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            // Some client setup code
+            EntityRenderers.register(ModEntities.HAMSTER.get(), HamsterRenderer::new);
+
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
-            EntityRenderers.register(ModEntities.HAMSTER.get(), HamsterRenderer::new);
+
         }
     }
 }

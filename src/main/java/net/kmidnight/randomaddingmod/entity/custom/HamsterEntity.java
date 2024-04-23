@@ -3,6 +3,7 @@ package net.kmidnight.randomaddingmod.entity.custom;
 import net.minecraft.server.level.ServerLevel;
 import net.kmidnight.randomaddingmod.entity.ModEntities;
 import net.minecraft.world.entity.AgeableMob;
+import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -44,6 +45,9 @@ public class HamsterEntity extends Animal {
     public AgeableMob getBreedOffspring(ServerLevel serverLevel, AgeableMob ageableMob) {
         return ModEntities.HAMSTER.get().create(serverLevel);
     }
+
+    public final AnimationState idleAnimationState = new AnimationState();
+    private int idleAnimationTimeout = 0;
 
     @Override
     public boolean isFood(ItemStack pStack) {
