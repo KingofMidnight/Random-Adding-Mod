@@ -1,4 +1,4 @@
- Hamster (Mob) = [Model & Texture = Done] Half Done
+ Hamster (Mob) = [Model & Texture = Done] Done
  Elemental Dragons (Mob)
  IRL Spider (Mob)
 
@@ -8,5 +8,11 @@
  Ice Sword (Item) = Done
  Cheese Banner Logo (Item)
  Self-Destruct Button (Item)
+ Wolverine Claws (Item)
+ Grind Stone (Item)
+ Money (Item)
 
  Exp Block (Block) = {EXP bottles to Exp block, Gets exp over time} = Half Done
+ Glowing Dark Mush Block (Block) = {When players gets close this block will slowly light up}
+ Adamantion Blocks (Block)
+ Land Claiming Block (Block) = {Claim area of Block, Whitelist player for area}

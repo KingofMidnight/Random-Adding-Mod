@@ -10,7 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class HamsterRenderer extends MobRenderer<HamsterEntity, HamsterModel<HamsterEntity>> {
     public HamsterRenderer(EntityRendererProvider.Context pContext) {
-        super(pContext, new HamsterModel<>(pContext.bakeLayer(ModModelLayers.HAMSTER_LAYER)), 0.3F);
+        super(pContext, new HamsterModel<>(pContext.bakeLayer(ModModelLayers.HAMSTER_LAYER)), 0.4F);
     }
 
     @Override

@@ -19,6 +19,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> EXP_BLOCK = registerBlock("exp_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> GDMB = registerBlock("glowing_dark_mush_block",
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> LAND_CLAIMING = registerBlock("land_claiming_block",
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
