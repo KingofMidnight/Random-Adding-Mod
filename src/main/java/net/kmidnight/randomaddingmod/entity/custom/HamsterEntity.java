@@ -25,7 +25,7 @@ public class HamsterEntity extends Animal {
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new FloatGoal(this));
         this.goalSelector.addGoal(1, new BreedGoal(this, 1.150));
-        this.goalSelector.addGoal(2, new TemptGoal(this, 1.20, Ingredient.of(Items.GRASS), false));
+        this.goalSelector.addGoal(2, new TemptGoal(this, 1.20, Ingredient.of(Items.GRASS), true));
         this.goalSelector.addGoal(3, new FollowParentGoal(this, 1.10));
         this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 1.10));
         this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, 3f));
@@ -34,7 +34,7 @@ public class HamsterEntity extends Animal {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Animal.createLivingAttributes()
-            .add(Attributes.MAX_HEALTH, 20)
+            .add(Attributes.MAX_HEALTH, 10)
             .add(Attributes.FOLLOW_RANGE, 240)
             .add(Attributes.MOVEMENT_SPEED, 0.150)
             .add(Attributes.ARMOR_TOUGHNESS , 0.1f);

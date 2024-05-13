@@ -1,5 +1,6 @@
  Hamster (Mob) = [Model & Texture = Done] Done
  Elemental Dragons (Mob)
+ Raccoon (Mob) =  Half done (M&T done, animation ND)
  IRL Spider (Mob)
 
  Cat Launcher (Item) = [Model & Texture = Done] Half Done (move model)
@@ -7,12 +8,18 @@
  Musket (Item)
  Ice Sword (Item) = Done
  Cheese Banner Logo (Item)
- Self-Destruct Button (Item)
+ Self-Destruct Button (Item) = Half Done (M&T done, code ND)
  Wolverine Claws (Item)
  Grind Stone (Item)
  Money (Item)
 
  Exp Block (Block) = {EXP bottles to Exp block, Gets exp over time} = Half Done
- Glowing Dark Mush Block (Block) = {When players gets close this block will slowly light up}
+ Glowing Dark Mush (Block) = {When players gets close this block will slowly light up}
  Adamantion Blocks (Block)
  Land Claiming Block (Block) = {Claim area of Block, Whitelist player for area}
+ Invisible Mine (Block)
+ Invisible Bear Trap (Block)
+ Quicksand (Block)
+ Fake Dirt Floor (Block)
+ Acid Floor (Block)
+ A Planet Projector (Block)
