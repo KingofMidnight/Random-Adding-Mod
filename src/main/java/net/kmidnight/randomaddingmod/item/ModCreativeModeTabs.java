@@ -21,7 +21,25 @@ public class ModCreativeModeTabs {
             output.accept(ModItems.MUSKET.get());
             output.accept(ModItems.CHEESEBANNERLOGO.get());
             output.accept(ModItems.SELFDESTRUCTBUTTON.get());
+            output.accept(ModItems.COIN1.get());
+            output.accept(ModItems.COIN5.get());
+            output.accept(ModItems.COIN10.get());
+            output.accept(ModItems.COIN20.get());
+            output.accept(ModItems.COIN50.get());
+            output.accept(ModItems.COIN100.get());
+            output.accept(ModItems.WALLET.get());
+            output.accept(ModItems.WCLAWS.get());
+            output.accept(ModItems.GRINDSTONEH.get());
             output.accept(ModBlocks.EXP_BLOCK.get());
+            output.accept(ModBlocks.GDMB.get());
+            output.accept(ModBlocks.LAND_CLAIMING.get());
+            output.accept(ModBlocks.ATM.get());
+            output.accept(ModBlocks.INVISMINE.get());
+            output.accept(ModBlocks.INVISBEARTRAP.get());
+            output.accept(ModBlocks.QUICKSAND.get());
+            output.accept(ModBlocks.FAKEDIRTFLOOR.get());
+            output.accept(ModBlocks.ACID.get());
+            output.accept(ModBlocks.PLANET_PROJECTOR.get());
         }).build());
 
     public static void register(IEventBus eventBus) {

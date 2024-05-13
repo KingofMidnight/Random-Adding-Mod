@@ -23,6 +23,20 @@ public class ModBlocks {
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> LAND_CLAIMING = registerBlock("land_claiming_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> ATM = registerBlock("atm",
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> INVISMINE = registerBlock("invis_mine",
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> INVISBEARTRAP = registerBlock("invis_bear_trap",
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> ACID = registerBlock("acid",
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.MAGMA_BLOCK)));
+    public static final RegistryObject<Block> FAKEDIRTFLOOR = registerBlock("fake_dirt_floor",
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+    public static final RegistryObject<Block> QUICKSAND = registerBlock("quick_sand",
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND)));
+    public static final RegistryObject<Block> PLANET_PROJECTOR = registerBlock("planet_projector",
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

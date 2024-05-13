@@ -11,7 +11,8 @@
  Self-Destruct Button (Item) = Half Done (M&T done, code ND)
  Wolverine Claws (Item)
  Grind Stone (Item)
- Money (Item)
+
+ Money System (Item & Block)
 
  Exp Block (Block) = {EXP bottles to Exp block, Gets exp over time} = Half Done
  Glowing Dark Mush (Block) = {When players gets close this block will slowly light up}
