@@ -4,9 +4,26 @@
   "item.randomaddingmod.musket": "Musket",
   "item.randomaddingmod.cheese_banner_logo": "Cheese Banner Logo",
   "item.randomaddingmod.self_destruct_button": "Self-Destruct Button",
-
+  "item.randomaddingmod.wclaws": "Claws",
+  "item.randomaddingmod.grindstoneh": "Hand Grindstone",
+  "item.randomaddingmod.coin1": "1",
+  "item.randomaddingmod.coin5": "5",
+  "item.randomaddingmod.coin10": "10",
+  "item.randomaddingmod.coin20": "20",
+  "item.randomaddingmod.coin50": "50",
+  "item.randomaddingmod.coin100": "100",
+  "item.randomaddingmod.wallet": "Wallet",
 
   "block.randomaddingmod.exp_block": "EXP Block",
+  "block.randomaddingmod.glowing_dark_mush_block": "Glowing Dark Mush",
+  "block.randomaddingmod.land_claiming_block": "Area Claimer",
+  "block.randomaddingmod.atm": "KM ATM",
+  "block.randomaddingmod.invis_mine": "Invisible Mine",
+  "block.randomaddingmod.invis_bear_trap": "Invisible Bear Trap",
+  "block.randomaddingmod.quicksand": "Quicksand",
+  "block.randomaddingmod.fake_dirt_floor": "FAke DiRt FloOr",
+  "block.randomaddingmod.acid": "Acid Block",
+  "block.randomaddingmod.planet_projector": "Planet Projector",
 
   "creativetab.randomaddingmod_tab": "Random Adding Mod"
 }
