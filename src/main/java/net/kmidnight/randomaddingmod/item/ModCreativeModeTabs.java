@@ -22,11 +22,13 @@ public class ModCreativeModeTabs {
             output.accept(ModItems.CHEESEBANNERLOGO.get());
             output.accept(ModItems.SELFDESTRUCTBUTTON.get());
             output.accept(ModItems.COIN1.get());
+            output.accept(ModItems.COIN2.get());
             output.accept(ModItems.COIN5.get());
             output.accept(ModItems.COIN10.get());
             output.accept(ModItems.COIN20.get());
             output.accept(ModItems.COIN50.get());
             output.accept(ModItems.COIN100.get());
+            output.accept(ModItems.COIN9000.get());
             output.accept(ModItems.WALLET.get());
             output.accept(ModItems.WCLAWS.get());
             output.accept(ModItems.GRINDSTONEH.get());
@@ -34,6 +36,7 @@ public class ModCreativeModeTabs {
             output.accept(ModBlocks.GDMB.get());
             output.accept(ModBlocks.LAND_CLAIMING.get());
             output.accept(ModBlocks.ATM.get());
+            output.accept(ModBlocks.VAULT.get());
             output.accept(ModBlocks.INVISMINE.get());
             output.accept(ModBlocks.INVISBEARTRAP.get());
             output.accept(ModBlocks.QUICKSAND.get());

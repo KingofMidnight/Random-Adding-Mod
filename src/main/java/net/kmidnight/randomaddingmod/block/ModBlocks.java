@@ -25,6 +25,8 @@ public class ModBlocks {
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> ATM = registerBlock("atm",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> VAULT = registerBlock("vault",
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> INVISMINE = registerBlock("invis_mine",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> INVISBEARTRAP = registerBlock("invis_bear_trap",

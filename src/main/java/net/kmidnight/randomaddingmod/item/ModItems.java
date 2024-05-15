@@ -27,6 +27,8 @@ public class ModItems {
         () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<Item> COIN1 = ITEMS.register("coin1",
         () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)));
+    public static final RegistryObject<Item> COIN2 = ITEMS.register("coin2",
+        () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)));
     public static final RegistryObject<Item> COIN5 = ITEMS.register("coin5",
         () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)));
     public static final RegistryObject<Item> COIN10 = ITEMS.register("coin10",
@@ -37,6 +39,8 @@ public class ModItems {
         () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.RARE)));
     public static final RegistryObject<Item> COIN100 = ITEMS.register("coin100",
         () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> COIN9000 = ITEMS.register("coin9000",
+        () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)));
     public static final RegistryObject<Item> WALLET = ITEMS.register("wallet",
         () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON)));
 
