@@ -15,7 +15,7 @@ public class HamsterRenderer extends MobRenderer<HamsterEntity, HamsterModel<Ham
 
     @Override
     public ResourceLocation getTextureLocation(HamsterEntity pEntity) {
-        return new ResourceLocation(RandomAddingMod.MOD_ID, "textures/entity/hamster.png");
+        return new ResourceLocation(RandomAddingMod.MODID, "textures/entity/hamster.png");
     }
 
     @Override

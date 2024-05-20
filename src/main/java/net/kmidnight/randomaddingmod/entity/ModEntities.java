@@ -11,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPE =
-        DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, RandomAddingMod.MOD_ID);
+        DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, RandomAddingMod.MODID);
 
     public static final RegistryObject<EntityType<HamsterEntity>> HAMSTER =
         ENTITY_TYPE.register("hamster", () -> EntityType.Builder.of(HamsterEntity::new, MobCategory.CREATURE)

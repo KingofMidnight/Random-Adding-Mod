@@ -2,6 +2,7 @@ package net.kmidnight.randomaddingmod;
 
 import com.mojang.logging.LogUtils;
 import net.kmidnight.randomaddingmod.block.ModBlocks;
+import net.kmidnight.randomaddingmod.block.entity.ModBlockEntities;
 import net.kmidnight.randomaddingmod.entity.ModEntities;
 import net.kmidnight.randomaddingmod.entity.client.HamsterRenderer;
 import net.kmidnight.randomaddingmod.item.ModCreativeModeTabs;
@@ -24,9 +25,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-@Mod(RandomAddingMod.MOD_ID)
+@Mod(RandomAddingMod.MODID)
 public class RandomAddingMod {
-    public static final String MOD_ID = "randomaddingmod";
+    public static final String MODID = "randomaddingmod";
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public RandomAddingMod() {
@@ -35,27 +36,19 @@ public class RandomAddingMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
 
-
-        // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-
-        // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
-
-        // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
-        // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         LOGGER.info("HELLO FROM COMMON SETUP");
     }
 
-    // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.ICESWORD);
@@ -76,7 +69,7 @@ public class RandomAddingMod {
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {

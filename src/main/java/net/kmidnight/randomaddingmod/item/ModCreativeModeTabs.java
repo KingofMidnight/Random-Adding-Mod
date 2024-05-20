@@ -11,7 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModCreativeModeTabs {
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RandomAddingMod.MOD_ID);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RandomAddingMod.MODID);
     public static final RegistryObject<CreativeModeTab> RANDOMADDINGMOD_TAB = CREATIVE_MODE_TABS.register("randomaddingmod_tab", () -> CreativeModeTab.builder()
         .icon(() -> new ItemStack(ModItems.ICESWORD.get()))
         .title(Component.translatable("creativetab.randomaddingmod_tab"))
@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
             output.accept(ModItems.MUSKET.get());
             output.accept(ModItems.CHEESEBANNERLOGO.get());
             output.accept(ModItems.SELFDESTRUCTBUTTON.get());
+            output.accept(ModItems.COINRUSTED.get());
             output.accept(ModItems.COIN1.get());
             output.accept(ModItems.COIN2.get());
             output.accept(ModItems.COIN5.get());
@@ -30,13 +31,14 @@ public class ModCreativeModeTabs {
             output.accept(ModItems.COIN100.get());
             output.accept(ModItems.COIN9000.get());
             output.accept(ModItems.WALLET.get());
+            output.accept(ModItems.CARD.get());
             output.accept(ModItems.WCLAWS.get());
             output.accept(ModItems.GRINDSTONEH.get());
             output.accept(ModBlocks.EXP_BLOCK.get());
             output.accept(ModBlocks.GDMB.get());
+            output.accept(ModBlocks.ADAMANTIUM_BLOCK.get());
             output.accept(ModBlocks.LAND_CLAIMING.get());
             output.accept(ModBlocks.ATM.get());
-            output.accept(ModBlocks.VAULT.get());
             output.accept(ModBlocks.INVISMINE.get());
             output.accept(ModBlocks.INVISBEARTRAP.get());
             output.accept(ModBlocks.QUICKSAND.get());

@@ -1,6 +1,7 @@
 package net.kmidnight.randomaddingmod.block;
 
 import net.kmidnight.randomaddingmod.RandomAddingMod;
+import net.kmidnight.randomaddingmod.block.custom.AtmBlock;
 import net.kmidnight.randomaddingmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -15,18 +16,18 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Supplier;
 
 public class ModBlocks {
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, RandomAddingMod.MOD_ID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, RandomAddingMod.MODID);
 
     public static final RegistryObject<Block> EXP_BLOCK = registerBlock("exp_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> GDMB = registerBlock("glowing_dark_mush_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> ADAMANTIUM_BLOCK = registerBlock("admantium_block",
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
     public static final RegistryObject<Block> LAND_CLAIMING = registerBlock("land_claiming_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> ATM = registerBlock("atm",
-        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
-    public static final RegistryObject<Block> VAULT = registerBlock("vault",
-        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+        () -> new AtmBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> INVISMINE = registerBlock("invis_mine",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> INVISBEARTRAP = registerBlock("invis_bear_trap",

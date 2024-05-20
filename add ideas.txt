@@ -11,12 +11,13 @@
  Self-Destruct Button (Item) = Half Done (M&T done, code ND)
  Wolverine Claws (Item)
  Grind Stone (Item)
+ Sonic Diamond (Item)
 
  Money System (Item & Block)
 
  Exp Block (Block) = {EXP bottles to Exp block, Gets exp over time} = Half Done
  Glowing Dark Mush (Block) = {When players gets close this block will slowly light up}
- Adamantion Blocks (Block)
+ Adamantium Blocks (Block)
  Land Claiming Block (Block) = {Claim area of Block, Whitelist player for area}
  Invisible Mine (Block)
  Invisible Bear Trap (Block)
