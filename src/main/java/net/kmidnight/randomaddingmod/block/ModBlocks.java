@@ -1,6 +1,7 @@
 package net.kmidnight.randomaddingmod.block;
 
 import net.kmidnight.randomaddingmod.RandomAddingMod;
+import net.kmidnight.randomaddingmod.block.custom.AtmBlock;
 import net.kmidnight.randomaddingmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -24,9 +25,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> LAND_CLAIMING = registerBlock("land_claiming_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> ATM = registerBlock("atm",
-        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
-    public static final RegistryObject<Block> VAULT = registerBlock("vault",
-        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+        () -> new AtmBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> INVISMINE = registerBlock("invis_mine",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> INVISBEARTRAP = registerBlock("invis_bear_trap",

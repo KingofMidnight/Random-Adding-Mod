@@ -11,6 +11,7 @@
  Self-Destruct Button (Item) = Half Done (M&T done, code ND)
  Wolverine Claws (Item)
  Grind Stone (Item)
+ Sonic Diamond (Item)
 
  Money System (Item & Block)
 
