@@ -12,6 +12,7 @@
  Wolverine Claws (Item)
  Grind Stone (Item)
  Sonic Diamond (Item)
+ Bo Staff (Item) [Black with Gold Ends]
 
  Money System (Item & Block)
 
@@ -25,3 +26,5 @@
  Fake Dirt Floor (Block)
  Acid Floor (Block)
  A Planet Projector (Block)
+
+ Coat Hood (Custom Armor type thing?)
